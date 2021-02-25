@@ -16,21 +16,18 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
-    - google-api-core-grpc >=1.6.0,<2.0.0dev
-    - grpc-google-iam-v1 >=0.11.4,<0.12dev
+    - python >=3.6
+    - google-api-core-grpc >=1.22.2,<2.0.0dev
+    - grpc-google-iam-v1 >=0.12.3,<0.13dev
+    - libcst >=0.2.5
+    - proto-plus >=1.4.0
 
 test:
   imports:
-    - google
-    - google.cloud
-    - google.cloud.kms_v1
-    - google.cloud.kms_v1.gapic
-    - google.cloud.kms_v1.gapic.transports
-    - google.cloud.kms_v1.proto
+    - google.cloud.kms
   commands:
     - pip check
   requires:
