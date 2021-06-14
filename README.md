@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-km
 
 Summary: Cloud Key Management Service (KMS) API client library
 
-Development: https://github.com/googleapis/google-cloud-python/tree/master/kms/google/cloud/kms_v1
+Development: https://github.com/GoogleCloudPlatform/google-cloud-python
 
 Documentation: https://cloud.google.com/kms/docs/
 
@@ -40,6 +40,7 @@ Installing `google-cloud-kms` from the `conda-forge` channel can be achieved by 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `google-cloud-kms` can be installed with:
