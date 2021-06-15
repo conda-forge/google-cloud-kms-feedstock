@@ -1,7 +1,7 @@
 About google-cloud-kms
 ======================
 
-Home: https://github.com/GoogleCloudPlatform/google-cloud-python
+Home: https://github.com/googleapis/python-kms
 
 Package license: Apache-2.0
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-km
 
 Summary: Cloud Key Management Service (KMS) API client library
 
-Development: https://github.com/GoogleCloudPlatform/google-cloud-python
+Development: https://github.com/googleapis/python-kms
 
 Documentation: https://cloud.google.com/kms/docs/
 
