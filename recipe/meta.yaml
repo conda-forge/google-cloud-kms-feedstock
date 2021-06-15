@@ -1,5 +1,5 @@
 {% set name = "google-cloud-kms" %}
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ea353d0bc668b0402c04837bab131a05a055855ee5c8b96ff34fff707b147338
+  sha256: 39c6aa1633e45dc0364397b24c83718bd63f833db41d8c93b76019c16208d0f1
 
 build:
   number: 0
@@ -23,6 +23,7 @@ requirements:
     - google-api-core-grpc >=1.22.2,<2.0.0dev
     - grpc-google-iam-v1 >=0.12.3,<0.13dev
     - libcst >=0.2.5
+    - packaging >=14.3
     - proto-plus >=1.4.0
 
 test:
@@ -34,13 +35,13 @@ test:
     - pip
 
 about:
-  home: https://github.com/GoogleCloudPlatform/google-cloud-python
+  home: https://github.com/googleapis/python-kms
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
   summary: Cloud Key Management Service (KMS) API client library
   doc_url: https://cloud.google.com/kms/docs/
-  dev_url: https://github.com/GoogleCloudPlatform/google-cloud-python
+  dev_url: https://github.com/googleapis/python-kms
 
 extra:
   recipe-maintainers:
