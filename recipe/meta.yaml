@@ -1,5 +1,5 @@
 {% set name = "google-cloud-kms" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 39c6aa1633e45dc0364397b24c83718bd63f833db41d8c93b76019c16208d0f1
+  sha256: c189173f659b1129c30bad2b114807fa100fb8877dd5962013a1d3de1c5ab796
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - google-api-core-grpc >=1.22.2,<2.0.0dev
+    - google-api-core-grpc >=1.26.0,<2.0.0dev
     - grpc-google-iam-v1 >=0.12.3,<0.13dev
     - libcst >=0.2.5
     - packaging >=14.3
