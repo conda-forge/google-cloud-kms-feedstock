@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-kms-{{ version }}.tar.gz
   sha256: eddb1254cf9e552272fc9ab00c7906ccf6f276727cb8be137422694e111b5c6a
 
 build:
@@ -24,7 +24,7 @@ requirements:
     - grpc-google-iam-v1 >=0.12.4,<0.13dev
     - libcst >=0.2.5
     - proto-plus >=1.22.0,<2.0.0dev
-    - protobuf >=3.19.0,<5.0.0dev
+    - protobuf >=3.20.2,<5.0.0dev
 
 test:
   imports:
