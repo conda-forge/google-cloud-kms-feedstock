@@ -1,13 +1,13 @@
 {% set name = "google-cloud-kms" %}
-{% set version = "2.12.1" %}
+{% set version = "2.12.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 035b0876435d2b82fa81bdd5040a6e289ef527937626ae3791c0fc0e91d4f7d1
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-kms-{{ version }}.tar.gz
+  sha256: eddb1254cf9e552272fc9ab00c7906ccf6f276727cb8be137422694e111b5c6a
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - grpc-google-iam-v1 >=0.12.4,<0.13dev
     - libcst >=0.2.5
     - proto-plus >=1.22.0,<2.0.0dev
-    - protobuf >=3.19.0,<5.0.0dev
+    - protobuf >=3.20.2,<5.0.0dev
 
 test:
   imports:
