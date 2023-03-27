@@ -1,5 +1,5 @@
 {% set name = "google-cloud-kms" %}
-{% set version = "2.15.0" %}
+{% set version = "2.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-kms-{{ version }}.tar.gz
-  sha256: fed9b4f253968d0323575215a2ff1c5f4109b0a8f0c4c403d8d21c267a077557
+  sha256: 2926a1c42f731a004a25d6a8c3e24b5f969bd23d1b4129d53dff2239aed533eb
 
 build:
   noarch: python
