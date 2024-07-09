@@ -9,7 +9,7 @@ Package license: Apache-2.0
 
 Summary: Google Cloud Kms API client library
 
-Development: https://github.com/googleapis/python-kms
+Development: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-kms
 
 Documentation: https://cloud.google.com/kms/docs/
 
