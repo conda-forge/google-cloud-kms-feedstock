@@ -1,5 +1,5 @@
 {% set name = "google-cloud-kms" %}
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6f0171a4c0be0904e9827bbd17299a6d711f7b0d20fe758bd5bd731fd5bb08fa
+  sha256: 19fdc295bae17471b7ee013a7a1fddac838c74c2ffe1c5739316dc022e3bcb44
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - google-api-core-grpc
     - google-auth >=2.14.1,<3.0.0dev,!=2.24.0,!=2.25.0
     # more restrictive version for python 3.13
-    - proto-plus >=1.25.0,<2.0.0dev
+    - proto-plus >=1.22.3,<2.0.0dev
     - protobuf >=3.20.2,<6.0.0dev,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
     - grpc-google-iam-v1 >=0.12.4,<1.0.0dev
 
