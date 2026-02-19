@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-kms
-  version: "3.10.0"
+  version: "3.11.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_kms-${{ version }}.tar.gz
-  sha256: 2060d56cebe856ecdff04b6ea6b477a498b620ed57577804e0aea2950a2edab1
+  sha256: 5f7d7bdb347f13a8a2b7bad6cbdf3846a51690df7215586845b62851b88839f7
 
 build:
   number: 0
